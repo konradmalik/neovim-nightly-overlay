@@ -31,7 +31,7 @@
               ${key} = value;
             };
         }))
-    (builtins.mapAttrs (lib.const pkgs.fetchurl))
+    (builtins.mapAttrs (lib.const pkgs.fetchzip))
   ];
 
   # The following overrides will only take effect for linux hosts
